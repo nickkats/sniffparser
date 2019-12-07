@@ -1,0 +1,14 @@
+sniffparser V1
+12/6/2019
+Nick Katsantones
+
+This script extracts the packets from a `K12 text file` exported by Wireshark.
+There isn't much error handling, and it isn't optimized,  as such I don't recommend
+this to be used in production, although you do you.
+
+Example command line call:
+python sniffparser.py ./blah.txt ./data.dat [-v]
+
+The input file can be created in Wireshark by going to:
+File > Export Specified Packets
+And selecting "K12 text file" as the "Save as type".
